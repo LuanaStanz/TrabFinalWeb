@@ -1,0 +1,138 @@
+@import url('header.css');
+
+
+main {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: normal;
+}
+
+body {
+    background-color: #f6f6f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.agendamento {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.agendamento h1 {
+    margin-bottom: 10px;
+    color: #008080;
+}
+
+.agendamento p {
+    margin-bottom: 20px;
+}
+
+.agenda-da-semana {
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.agenda-da-semana h1 {
+    text-align: center;
+    color: #008080;
+    margin-bottom: 10px;
+}
+
+.agenda-da-semana p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+#agenda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f0fdfa;
+    border-left: 5px solid #008080;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card h2 {
+    font-size: 1rem;
+    color: #008080;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #006666;
+}
+
+#mensagem-sucesso {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}

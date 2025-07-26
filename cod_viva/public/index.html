@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>VIVA Sport Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#"><img src="./img/logo.png" alt="Logo VIVA" height="80px"></a>
+      <ul>
+        <li><a href="../index.html#sobre">Sobre</a></li>
+        <li><a href="../index.html#estrutura">Estrutura</a></li>
+        <li><a href="../index.html#aulas">Aulas</a></li>
+        <li><a href="../index.html#aluguel">Aluguel</a></li>
+      </ul>
+      <ul class="social">
+        <li><a href=""><i class="fas fa-phone"></i></i></a></li>
+        <li><a href=""><i class="fas fa-envelope"></i></a></li>
+        <li><a href=""><i class="fas fa-map-marker-alt"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>VIVA o momento</h1>
+    <p>Agende, jogue, repita...</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <div class="cards">
+      <article>
+        <img src="img/quadra2.png" alt="Quadra">
+        <h3>Aluguel de quadra</h3>
+        <p>Reserve a quadra ideal no horário conveniente a você.</p>
+        <a href="pages/agendamento.html">Agende seu horário</a>
+      </article>
+      <article>
+        <img src="img/equipement.jpg" alt="Equipamento">
+        <h3>Aluguel de equipamento</h3>
+        <p>Disponibilizamos o material para complementar seu jogo.</p>
+        <a href="#aluguel">Alugar</a>
+      </article>
+      <article>
+        <img src="img/aula.jpg" alt="Aulas">
+        <h3>Aulas</h3>
+        <p>Divirta-se aprendendo futebol, tênis ou beach tennis com nossos treinadores qualificados.</p>
+        <a href="#aulas">Saiba mais</a>
+      </article>
+      <article class="hidden">
+        <img src="img/lanche.jpg" alt="lanchonete">
+        <h3>Lanchonete</h3>
+        <p>Disfrute nosso lanches e não passe fome enquanto se diverte.</p>
+      </article>
+      <button id="ver-mais">▼</button>
+    </div>
+  </section>
+
+  <section id="estrutura">
+    <h2>Conheça nosso espaço</h2>
+    <p>Veja como é o ambiente onde você irá treinar e jogar.</p>
+    <img src="img/quadra.jpg" alt="Estrutura do VIVA">
+  </section>
+
+  <section id="comunidade">
+    <h2>Conecte-se</h2>
+    <p>Participe dos grupos de WhatsApp e conecte-se com pessoas com interesses similares.!</p>
+    <img src="img/comun.jpg" alt="Estrutura do VIVA">
+    <a href="https://wa.me/5588996331508">Quero fazer parte!</a>
+  </section>
+
+  <section id="noticias">
+    <h2>Notícias</h2>
+    <ul>
+      <li>
+        <img src="img/pickelball.jpg" alt="Notícia 1">
+        <strong>23/06/2025:</strong> Clínica introdutória de Pickleball
+      </li>
+      <li>
+        <img src="img/jogando.jpg" alt="Notícia 2">
+        <strong>01/06/2025:</strong> Circuito Cearense de Pickleball
+      </li>
+      <li>
+        <img src="img/comp.jpg" alt="Notícia 2">
+        <strong>23/03/2025:</strong> 6ª etapa do circuito cearense de Beach Tennis
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>VIVA Sport Center</p>
+    <p>Contato: (88) 99633-1508 | Triângulo, Quixadá-CE | Seg a Sáb: 17:30 - 23h</p>
+    <p>
+      <a href="https://www.instagram.com/vivasportcenter/">Instagram</a> |
+      <a href="https://www.facebook.com/vivasportcenter/">Facebook</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('ver-mais').addEventListener('click', () => {
+      const hiddenCard = document.querySelector('.cards article.hidden');
+      if (hiddenCard) {
+        hiddenCard.classList.remove('hidden');
+        document.getElementById('ver-mais').style.display = 'none';
+      }
+    });
+  </script>
+</body>
+
+</html>

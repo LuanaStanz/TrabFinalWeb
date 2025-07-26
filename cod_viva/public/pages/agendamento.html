@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento - VIVA Sport Center</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/agendamento.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img src="../img/logo.png" alt="Logo VIVA" height="80px"></a>
+            <ul>
+                <li><a href="../index.html#sobre">Sobre</a></li>
+                <li><a href="../index.html#estrutura">Estrutura</a></li>
+                <li><a href="../index.html#aulas">Aulas</a></li>
+                <li><a href="../index.html#aluguel">Aluguel</a></li>
+            </ul>
+            <ul class="social">
+                <li><a href=""><i class="fas fa-phone"></i></i></a></li>
+                <li><a href=""><i class="fas fa-envelope"></i></a></li>
+                <li><a href=""><i class="fas fa-map-marker-alt"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="agenda-da-semana">
+            <h1>Agenda da semana</h1>
+            <p>Confira os horários agendados na semana:</p>
+            <div id="agenda-container">
+                <div id="agenda"></div>
+            </div>
+        </section>
+        <section class="agendamento">
+            <h1>Agende seu horário</h1>
+            <p>Escolha a data, horário e modalidade para garantir sua diversão!</p>
+
+            <form id="form-agendamento">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="telefone">Telefone/WhatsApp:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="data">Data:</label>
+                <input type="date" id="data" min="" name="data" required>
+
+
+                <label for="hora">Horário:</label>
+                <select id="hora" name="hora" required>
+                    <option value="">Selecione o Horario</option>
+                </select>
+
+
+                <label for="modalidade">Modalidade:</label>
+                <select id="modalidade" name="modalidade">
+                    <option>Futebol</option>
+                    <option>Beach Tennis</option>
+                    <option>Aulas de Beach Tennis</option>
+                </select>
+
+                <button type="submit">Confirmar Agendamento</button>
+            </form>
+
+            <p id="mensagem-sucesso" style="display: none; color: green; margin-top: 1rem;">✅ Agendamento enviado com
+                sucesso!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>VIVA Sport Center</p>
+        <p>Contato: (88) 99633-1508 | Triângulo, Quixadá-CE | Seg a Sáb: 17:30 - 23h</p>
+        <p>
+            <a href="https://www.instagram.com/vivasportcenter/">Instagram</a> |
+            <a href="https://www.facebook.com/vivasportcenter/">Facebook</a>
+        </p>
+    </footer>
+
+    <script src="../js/agendamento.js"></script>
+</body>
+
+</html>
